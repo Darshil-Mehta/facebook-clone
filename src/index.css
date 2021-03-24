@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  text-decoration: none;
 }
 body {
   margin: 0;
@@ -9,8 +10,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #2e81f4; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0951b5; 
 }

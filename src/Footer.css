@@ -1,0 +1,24 @@
+.footer {
+    background-color: #2e81f4;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footer > .footer__text {
+    color: white;
+}
+.footer > .footer__links > a {
+    padding: 0px 20px;
+    color: white;
+}
+.footer > .footer__links > a > .MuiSvgIcon-root {
+    font-size: xx-large;
+}
+@media(max-width: 800px){
+    .footer > .footer__text {
+        display: none;
+    }
+}

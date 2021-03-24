@@ -1,0 +1,101 @@
+.app {
+    background-color: #f1f2f5;
+}
+.app__body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.header {
+    padding: 15px 20px;
+}
+.feed {
+    flex: 1;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story {
+    height: 200px;
+}
+
+@media(max-width: 1200px) {
+    .sidebarLeft {
+        display: none;
+    }
+    .sidebarRight {
+        display: none;
+    }
+    .app__body {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .app{
+        overflow: scroll;
+    }
+    .feed {
+        padding: 2px;
+        max-width: 100vw;
+    }
+    .storyReel {
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .story > h4 {
+        display: none;
+    }
+    .messageSender {
+        width: 100%;
+    }
+    .messageSender__top > form {
+        display: flex;
+        flex-direction: column;
+    }
+    .messageSender__top > form > .messageSender__input {
+        margin-bottom: 10px;
+    }
+    .messageSender__top > form > button {
+        width: 100px;
+        margin: auto;
+        outline: 0;
+        border: none;
+        background-color: #2e81f4;
+        border-radius: 10px;
+        padding: 10px;
+        color: white;
+    }
+    .messageSender__bottom > .messageSender__option {
+        padding: 10px;
+    }
+    .messageSender__bottom > .messageSender__option > h3 {
+        font-size: 10px;
+    }
+    .posts {
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px) {
+    .post__option > .MuiSvgIcon-root {
+        font-size: medium;
+    }
+    .post__option > .dont__display {
+        display: none;
+    }
+    .messageSender__bottom > .messageSender__option > .MuiSvgIcon-root {
+        font-size: x-large;
+    }
+    .messageSender__bottom > .messageSender__option > h3 {
+        display: none;
+    }
+    .header > .header__middle > .header__option > .MuiSvgIcon-root {
+        font-size: large;
+    }
+} 

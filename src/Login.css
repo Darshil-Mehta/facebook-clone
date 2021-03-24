@@ -1,0 +1,29 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.login > .login__logo {
+    display: flex;
+    flex-direction: column;
+}
+.login > .login__logo > .facebook_logo {
+    height: 170px;
+    width: auto;
+}
+.login > .login__logo > .facebook_text {
+    height: 50px;
+}
+.login > .login__button {
+    background-color: #2e81f4;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.login > .login__button:hover {
+    background-color: #2e81f4;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    transform: scale(1.05);
+}

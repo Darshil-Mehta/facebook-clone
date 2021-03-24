@@ -1,0 +1,38 @@
+.storyReel {
+    display: flex;
+    align-items: center;
+}
+.addStory {
+    background-color: #2e81f4;
+    border-radius: 15px;
+    margin-right: 10px;
+    height: 200px;
+}
+.addStory > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.messageSender__input {
+    margin: 20px;
+    background-color: #eef2f5;
+    border: none;
+    outline-width: 0;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.addStory > form > button {
+    background-color: transparent;
+    outline-width: 0;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+    font-size: 15px;
+}
+.addStory > form > button:hover {
+    transform: scale(1.07);
+}
