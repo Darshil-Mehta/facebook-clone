@@ -35,7 +35,7 @@
 
 @media(max-width: 800px) {
     .app{
-        overflow: scroll;
+        overflow-x: scroll;
     }
     .feed {
         padding: 2px;
